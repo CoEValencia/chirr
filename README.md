@@ -6,4 +6,4 @@ Chirr is a chat based collaboration tool. The functionality of the chat interfac
 
 Like the cricket´s chirr; a fleeting moment https://www.youtube.com/watch?v=84ktHqOxTLY
 
-See the ![Functional & Technical specification](https://github.com/CoEValencia/chirr/wiki/functional_technical_specification)
+See the [Functional & Technical specification](https://github.com/CoEValencia/chirr/wiki/functional_technical_specification)

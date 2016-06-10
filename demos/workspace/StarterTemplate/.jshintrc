@@ -1,0 +1,19 @@
+{
+    "globals": {
+        "{appName}": false,
+    
+        "Ext": false,
+        "Devon": false,
+        "i18n": false,
+        "Config": true
+    },
+
+    "curly": true, // Force curly braces in control statements
+    "latedef": "nofunc", // Only allow functions to be used before their definition
+    "noarg": true, // Disallow arguments.callee/caller
+    "undef": true, // Warn about undefined variable usage
+    "unused": "vars", // Warn about unused but defined variables
+    "eqnull": true, // Allow comparison using == with null
+    "browser": true, // Activate browser environment
+    "strict": false // Do not force strict mode
+}

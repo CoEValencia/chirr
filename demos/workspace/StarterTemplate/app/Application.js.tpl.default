@@ -1,0 +1,23 @@
+/**
+ * The main application class. An instance of this class is created by app.js when it calls
+ * Ext.application(). This is the ideal place to handle application launch and initialization
+ * details.
+ */
+Ext.define('{appName}.Application', {
+    extend: 'Devon.App',
+    
+    controllers: [
+      '{appName}.controller.main.MainController',
+      '{appName}.controller.page1.Page1Controller'
+    ],
+
+    name: '{appName}',
+
+    stores: [
+        // TODO: add global / shared stores here
+    ],
+    
+    launch: function () {
+        // TODO - Launch the application
+    }
+});

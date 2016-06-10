@@ -12,3 +12,7 @@ presentations/.sass-cache
 presentations/css/reveal.min.css
 presentations/js/reveal.min.js
 presentations/bower_components/
+
+
+demos/workspace/ext/* 
+!demos/workspace/ext/copy_sencha_extjs6_here.txt

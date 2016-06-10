@@ -1,0 +1,54 @@
+{
+    "name": "login",
+    "settings": {
+        "cmd": {
+            "license": "commercial"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "http://localhost:1841/",
+        "exportPath": "D:/src/chirr/demos/session2",
+        "lockUrlPrefix": true,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "spacesToIndent": 4,
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "installStatus": "Not Installed"
+    },
+    "xdsVersion": "3.5.1",
+    "xdsBuild": 348,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext60",
+    "viewOrderMap": {
+        "view": [
+            "7372b4da-6a89-4a02-a378-f8fe5e5b5b3d",
+            "98320146-0539-4d0f-9a88-857270e1358a",
+            "8c068b86-ec11-4fee-bf64-ad89c0d92ad7",
+            "af0e876a-ec58-4697-bddc-8668f44977fc",
+            "3573b49e-ae69-4c2f-be4a-fdc249c5e4e1",
+            "c48c6db8-c8d8-4c7d-b891-446c12522ce2",
+            "d5160550-a745-4763-910a-cd2a336c487c",
+            "af0668f1-891f-4b52-905d-bcdecd54ed6d",
+            "9727f78e-d27a-47e6-b614-1bbf508f5e97"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "21d39171-39d0-4171-bbaf-901980656599",
+            "b072156f-aa81-44bf-8736-1b6843388e23"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

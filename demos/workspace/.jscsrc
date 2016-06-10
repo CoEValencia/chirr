@@ -1,0 +1,10 @@
+{
+    // "preset": "jquery",
+
+    "validateIndentation": 4, /* We use 4 spaces for indentation */
+    "disallowMixedSpacesAndTabs": true,
+    "disallowEmptyBlocks": true, // Do not allow empty blocks except in catch statements
+    "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+    "maximumLineLength": 999,
+    "safeContextKeyword": ["me"]
+}

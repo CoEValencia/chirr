@@ -1,0 +1,21 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "name": "Chirr",
+        "requires": [
+            "Ext.window.MessageBox"
+        ],
+        "views": [
+            "MainView",
+            "LoginForm",
+            "RegisterForm"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application"
+}

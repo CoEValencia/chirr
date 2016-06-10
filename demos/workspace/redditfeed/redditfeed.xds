@@ -1,0 +1,56 @@
+{
+    "name": "redditfeed",
+    "settings": {
+        "cmd": {
+            "license": "commercial"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "http://localhost:1841/",
+        "exportPath": "",
+        "lockUrlPrefix": true,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "spacesToIndent": 4,
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "installStatus": "Not Installed"
+    },
+    "xdsVersion": "3.5.1",
+    "xdsBuild": 348,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext60",
+    "viewOrderMap": {
+        "view": [
+            "b8d50ac2-9d3c-4412-b25c-f55c5a697125",
+            "18424cd9-7341-40d5-8136-bb69e131183d",
+            "a27c3bc3-1e4f-434d-b205-d65b56e39999",
+            "c6f7b539-ff92-43a0-a632-66c94746e3b1",
+            "468032e2-86ab-4319-a694-42e88d80acf5",
+            "1ed8e7b1-4ffc-454e-a98f-9f71590d0683"
+        ],
+        "store": [
+            "f0614e19-3c8a-4a65-88b8-617e77db563f"
+        ],
+        "controller": [],
+        "model": [
+            "55d3ca0b-c7e6-44bc-b786-c9b0f8a2693c"
+        ],
+        "resource": [
+            "806dc76a-43ae-4cf3-a624-20b915e91afd",
+            "b58b6bb6-72a1-404e-a7f8-13a194f94f7f",
+            "51839fdb-b6bb-4355-81dd-e56ae34c1792"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

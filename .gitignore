@@ -1,0 +1,14 @@
+.idea/
+*.iml
+*.iws
+*.eml
+out/
+.DS_Store
+.svn
+presentations/log/*.log
+presentations/tmp/**
+presentations/node_modules/
+presentations/.sass-cache
+presentations/css/reveal.min.css
+presentations/js/reveal.min.js
+presentations/bower_components/

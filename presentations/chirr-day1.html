@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Caught between Maths, Models and Magic</title>
+
+		<meta name="description" content="Caught between Maths, Models and Magic">
+		<meta name="author" content="Iwan van der Kleijn">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/soyrochus-solarized.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- VIDEO -->
+			<div class="slides">
+				<section data-background-video-loop data-background-video="images/crickets.mp4" data-background-color="#000000">
+				</section>
+				<section data-background-video-loop data-background-video="images/crickets.mp4" data-background-color="#000000">
+					<div style="background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 20px;">
+						<h1 style="color: #f6f9e8;">Un 'Hackathon';</h1>
+						<h2 style="color: #f6f9e8;">Construyendo <em>Chirr</em></h2>
+					</div>
+				</section>
+				<section data-background="images/tie.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">¿Quien soy yo?</h1>
+						<p style="color: #f6f9e8;">More than 25 years in ICT. More than 10 in Spain. Not sure which marked me more.</p>
+						<p style="color: #f6f9e8;">Likes to dabble in Clojure, JavaScript, C, F#, PureScript, C++ and Haskell.</p>
+						<p style="color: #f6f9e8;"><small>ivanderk@capgemini.com / @soyrochus</small></p>
+					</div>
+				</section>
+				<section data-background="images/flyer-A4.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">¿Un "Hackaton"?</h1>
+					</div>
+				</section>
+				<section data-background="images/trenches.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Cambio del rumbo</h1>
+					</div>
+				</section>
+				<section data-background="images/boring-lecture.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">No es una "formación"</h1>
+					</div>
+				</section>
+				<section data-background="images/hackathon.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Tampoco evento de "Makers" o "Hackers"</h1>
+					</div>
+				</section>
+				<section data-background="images/gumball.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Entretenimiento</h1>
+					</div>
+				</section>
+				<section data-background="images/mob.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Equipos de cuatro</h1>
+					</div>
+				</section>
+				<section data-background="images/fittingpieces.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">Equilibrados</h2>
+					</div>
+				</section>
+				<section data-background="images/projectmanagement.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">8 sessiones</h1>
+					</div>
+				</section>
+				<section data-background="images/review.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">Cada session empezamos con una revision</h2>
+					</div>
+				</section>
+				<section data-background="images/malloc.gif">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">y luego....</h1>
+					</div>
+				</section>
+				<section data-background="images/angelinvestor.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Imaginamos</h1>
+					</div>
+				</section>
+				<section data-background="images/chat.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Messaging:</h1>
+						<h2 style="color: #f6f9e8;">Más allá del cotillo &amp; parlotea ("chatter")</h2>
+					</div>
+				</section>
+				<section data-background="images/slack.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">#slack</h1>
+					</div>
+				</section>
+				<section data-background="images/chirrdemo.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h3 style="color: #f6f9e8;">http:/github.com/CoEValencia/chirr</h3>
+					</div>
+				</section>
+				<section data-background="images/workingremotely.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Going places....</h1>
+					</div>
+				</section>
+				<section data-background="images/inspiration.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Inspiración</h1>
+					</div>
+				</section>
+				<section data-background="images/simple.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Sencillez</h1>
+					</div>
+				</section>
+				<section data-background="images/multidisciplinary.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">multi-disciplinar</h1>
+					</div>
+				</section>
+				<section data-background="images/design.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Diseño &amp; implementación</h1>
+					</div>
+				</section>
+				<section data-background="images/CatFight.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Peleamos</h1>
+					</div>
+				</section>
+				<section data-background="images/aguadiente.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">And the winner....</h1>
+					</div>
+				</section>
+				<section data-background="images/capgemini.jpg">
+				</section>
+				<section data-background="images/devonfw.png">
+				</section>
+				<section data-background="images/not-invented-here.jpg">
+				</section>
+				<section data-background="images/web-technology-logos.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Alternativamente</h1>
+					</div>
+				</section>
+				<section data-background="images/who-am-i.jpg">
+				</section>
+				<section data-background="images/what-am-i.gif">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">"What am I"</h1>
+					</div>
+				</section>
+
+				<!-- 2ND PRESENTATION -->
+				<section>
+					<h2>¿Quien (eres|soy); ¿que (eres|soy)?</h2>
+					<p>Nos definimos o nos definen como:</p>
+					<p>desarolladores</p>
+					<p>diseñadores</p>
+					<p>'Dev's</p>
+					<p>Coders</p>
+					<p>Hackers</p>
+					<p>Consultores</p>
+					<p>Programadores</p>
+				</section>
+				<section data-background="images/darwinawards.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Pensamos que no somos asi</h1>
+					</div>
+				</section>
+				<section data-background="images/dali.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Estoy seguro que no somos</h1>
+					</div>
+				</section>
+				<section data-background="images/creativity.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">Aunque la creatividad (debería) impregnar todo lo que hacemos</h2>
+					</div>
+				</section>
+				<section data-background="images/capturedbetween.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Caught between Maths, Models and Magic</h1>
+						<h3 style="color: #f6f9e8;">Capturado entre matemática, modelos y magia</h3>
+					</div>
+				</section>
+				<section data-background="images/mathematics.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">Puede ser que nunca trabajamos directamente con "mate"</h2>
+					</div>
+				</section>
+				<section data-background="images/y_combinator.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">λ calculus</h1>
+						<h2 style="color: #f6f9e8;">Pero es el fundamento de todo lo que hacemos</h2>
+					</div>
+				</section>
+				<section data-background="images/model.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Más que matemática, pensamos en modelos</h1>
+					</div>
+				</section>
+				<section data-background="images/haggis.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Aunque la realidad no siempre cumple con la teoria</h1>
+					</div>
+				</section>
+				<section data-background="images/gandalf.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Tal vez podríamos ser</h1>
+					</div>
+				</section>
+				<section data-background="images/magician.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">Aunque eres probablemente más como</h2>
+					</div>
+				</section>
+				<section data-background="images/mythicalmanmonth.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h3 style="color: #f6f9e8;">Brooks en 1975</h3>
+						<p style="color: #f6f9e8;"><small>“...Computer programming, however, creates with an exceedingly tractable medium.<br>
+						<p style="color: #f6f9e8;">The programmer builds from pure thought-stuff: concepts and very flexible representations thereof<br>
+						<p style="color: #f6f9e8;">Because the medium is tractable, we expect few difficulties in implementation; hence our pervasive optimism. Because our ideas are faulty, we have bugs; hence our optimism is unjustified…”</small></p>
+					</div>
+				</section>
+				<section data-background="images/shantytown.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">Despues 40 años:</h1>
+						<h2 style="color: #f6f9e8;">La realidad de nuestra applicaciones y sistemas</h2>
+					</div>
+				</section>
+				<section data-background="images/work.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">Sobreesfuerzo y horarios absurdos</h2>
+					</div>
+				</section>
+				<section data-background="images/el.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">Él....</h2>
+					</div>
+				</section>
+				<section data-background="images/xkcd.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">...y nosotros mismos tambien...</h2>
+					</div>
+				</section>
+				<section data-background="images/factoria.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">"Industrialización" y "factorías de software"</h2>
+					</div>
+				</section>
+				<section data-background="images/architecture.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">Modelos y metáforas equivocadas</h2>
+					</div>
+				</section>
+				<section data-background="images/codemine.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">Trabajar en el "Code mine"</h2>
+					</div>
+				</section>
+				<section data-background="images/dawn.jpg">
+				</section>
+				<section data-background="images/iot.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">"...Software is eating the world..."</h1>
+						<h2 style="color: #f6f9e8;">Marc Andreessen</h2>
+					</div>
+				</section>
+				<section data-background="images/cerebro.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">Por encima de todo, vas a necesitar tu cerebro</h2>
+					</div>
+				</section>
+				<section data-background="images/average.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h1 style="color: #f6f9e8;">“…Don´t be average…”</h1>
+					</div>
+				</section>
+				<section data-background="images/practicar.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">Practicar y destacarse</h2>
+					</div>
+				</section>
+				<section data-background="images/idiomas.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">Aprender a hablar Inglés u otro idioma</h2>
+					</div>
+				</section>
+				<section data-background="images/profesional.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">Ser profesional</h2>
+					</div>
+				</section>
+				<section data-background="images/sociable.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">Sea sociable y humano</h2>
+					</div>
+				</section>
+				<section data-background="images/sertumismo.png">
+				</section>
+				<section data-background="images/personas.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">Porque en final no son los programas, procesos o sistemas;</h2>
+						<h2 style="color: #f6f9e8;">es la gente que hace la diferencia</h2>
+					</div>
+				</section>
+				<section data-background="images/cricket.png">
+					<div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px;">
+						<h2 style="color: #f6f9e8;">¿Empezamos?</h2>
+					</div>
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- BLAH -->
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				//transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'zoom',
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

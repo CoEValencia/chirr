@@ -10,14 +10,17 @@
     "minified": "babel src --out-file lib/schwanken-compiled.js --minified"
   },
   "babel": {
-
-    "presets":["babel-preset-es2015"]
+    "presets": [
+      "babel-preset-es2015"
+    ]
   },
   "author": "Iwan van der Kleijn <iwanvanderkleijn@gmail.com>",
   "license": "MIT License",
   "dependencies": {
+    "body-parser": "~1.13.2",
     "express": "~4.13.0",
-    "body-parser": "~1.13.2"
+    "nedb": "^1.8.0",
+    "ws": "^1.1.1"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",

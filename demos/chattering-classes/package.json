@@ -17,7 +17,7 @@
   "author": "Iwan van der Kleijn <iwanvanderkleijn@gmail.com>",
   "license": "MIT License",
   "dependencies": {
-    "body-parser": "~1.13.2",
+    "body-parser": "^1.13.3",
     "express": "~4.13.0",
     "nedb": "^1.8.0",
     "ws": "^1.1.1"

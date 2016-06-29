@@ -1,6 +1,5 @@
 
 export class Status {
-
   constructor(status, result){
 
       this.status = status;
@@ -13,6 +12,14 @@ export class Status {
 
   static OK(result){
     return new Status(200, result);
+  }
+
+  static sendOK(res, result){
+    res.send(new Status(200, result));
+  }
+
+  static sendError(res, status, result){
+    res.send(new Status(status, result));
   }
 
   static Error(status, description){

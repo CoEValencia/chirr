@@ -13,20 +13,6 @@ let users = new MockUsers();
 let sessions = new MockSessions();
 let streams = new MockStreams();
 
-app.get('/', (req, res) => {
-    res.send('Hello World');
-});
-
-app.post('/', (req, res) => {
-    let json = req.body;
-    console.log(typeof json);
-    res.send({
-        id: 100,
-        text: 'Hello World',
-        data: json
-    });
-});
-
 app.post('/login', (req, res) => {
     let data = req.body;
     if (users.login(data.username, data.password)) {
@@ -50,28 +36,34 @@ app.post('/register', (req, res) => {
     }
 });
 
-let with_session = (req, res, handler) => {
+let session_aware_method = (app, method) => {
 
-  let username = sessions.getSession(req.headers['auth-token']);
-  if (username) {
+    return (url, handler) => {
+      method.call(app, url, (req, res) => {
 
-      let result = handler(username);
-      res.status = result.Status;
-      res.send(result);
-
-  } else {
-      Status.sendError(res, 403, 'Not authenticated or not authorized');
-  }
+        let username = sessions.getSession(req.headers['auth-token']);
+        if (username) {
+            let result = handler(req, res, username);
+            res.status = result.Status;
+            res.send(result);
+        } else {
+            Status.sendError(res, 403, 'Not authenticated or not authorized');
+        }
+      });
+    };
 };
 
-app.get('/streams', (req, res) => {
-  return with_session(req, res, (username)=>{
+let on_get = session_aware_method(app, app.get);
+let on_post = session_aware_method(app, app.post);
 
-    let result = streams.getStreams(username);
-    return Status.OK(result);
+on_get('/streams', (req, res, username) => {
 
-  });
+  let result = streams.getStreams(username);
+  return Status.OK(result);
 });
+
+
+
 
 /* istanbul ignore next */
 if (!module.parent) {

@@ -77,7 +77,9 @@ describe('Chattering classes:', () => {
             let str = streams.getStreams('angelina');
             assert.equal(str.length, 2);
 
-
+            let fl1 = streams.getFlows(str[0].id);
+            let fl2 = streams.getFlows(str[1].id);
+            assert.equal(fl1.length + fl2.length, 4);
 
         });
     });

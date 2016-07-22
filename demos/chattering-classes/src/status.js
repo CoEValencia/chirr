@@ -14,10 +14,12 @@ export class Status {
     }
 
     static sendOK(res, result) {
+        res.status = 200;
         res.send(new Status(200, result));
     }
 
     static sendError(res, status, result) {
+        res.status = status;
         res.send(new Status(status, result));
     }
 

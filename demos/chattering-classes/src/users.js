@@ -1,22 +1,10 @@
 import {getId} from "./utils";
 
-export class MockUsers {
+export class Users {
 
 
-    constructor() {
-
-        this.accounts = {
-            'angelina': {
-                         username: 'angelina',
-                         fullname: 'Angelina Triste',
-                         password: 'moped'
-                       },
-            'juanito': {
-                         username: 'juanito',
-                         fullname: 'juanito Paquito',
-                         password: 'bici'
-                       },
-        };
+    constructor(data) {
+      this.data = data;
     }
 
     //login(userid, password) -> Either (Error, token)`

@@ -1,8 +1,8 @@
 import fs from 'fs';
 import assert from 'assert';
 import {Status} from '../lib/status';
-import {MockUsers} from '../lib/users';
-import {MockStreams} from '../lib/streams';
+import {Users} from '../lib/users';
+import {Streams} from '../lib/streams';
 
 describe('Utility classes:', () => {
     describe('Result', () => {
@@ -41,7 +41,8 @@ describe('Chattering classes:', () => {
 
         it('should be correcly registering & authenticating', () => {
 
-            let users = new MockUsers();
+            let data = new Data();
+            let users = new Users(data);
 
             let res = users.login('angelina', 'moped');
             assert.ok(res);
@@ -71,8 +72,9 @@ describe('Chattering classes:', () => {
 
         it('should be correcly returning Stream & Flow info', () => {
 
-            let users = new MockUsers();
-            let streams = new MockStreams();
+            let data = new Data();
+            let users = new Users(data);
+            let streams = new Streams(data);
 
             let str = streams.getStreams('angelina');
             assert.equal(str.length, 2);

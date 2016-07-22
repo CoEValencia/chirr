@@ -1,20 +1,17 @@
 
 import {getId} from "./utils";
 
-export class MockStreams {
+export class Streams {
 
-    constructor() {
-      this.streams = [{id: getId(), name: 'CoE Java Valencia', users: ['angelina', 'juanito'],
-                      flows: [{id:getId(), name: null}, {id:getId(), name: "Hackathon Chirr"}, {id:getId(), name: "Jornada intensiva"}]},
-                      {id: getId(), name: 'Recetas para vagos', users: ['angelina', 'juanito'],
-                      flows: [{id:getId(), name:null}]}];
+    constructor(data) {
+
+          this.streams = data;
+
     }
 
-    getStreams(username){
+    getStreams(username, callback){
 
-        return this.streams.filter(s => {
-          return s.users.filter(u => u === username).length > 0;
-        });
+
     }
 
     getFlows(streamId){
